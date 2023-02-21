@@ -1,4 +1,4 @@
-nclude <stdlib.h>
+#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
@@ -10,6 +10,7 @@ nclude <stdlib.h>
  * Return: Ayways (0)
  */
 int main(void)
+
 {
 		int n;
 
@@ -20,6 +21,11 @@ int main(void)
 		int m;
 
 		m = n % 10;
-		if (m
+		if (m > 5)
+			printif("Last digit of %d is %d and is greater than 5\n", n m);
+		if (m == 0)
+			printif("Last digit of %d is %d and is 0\n", n m);
+		if (m < 6 && m != 0)
+			printif("Last digit of %d is %d and is less than 6 and not 0\n", n m);
 		return (0);
 }
